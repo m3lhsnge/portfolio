@@ -10,7 +10,7 @@ const { title = 'Melih Aka | Portfolio' } = Astro.props;
 <html lang="tr">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="description" content="Melih Aka - Yazılım Mühendisi | Kişisel Portfolio" />
@@ -36,7 +36,7 @@ const { title = 'Melih Aka | Portfolio' } = Astro.props;
 
 	html, body {
 		width: 100%;
-		min-height: 100vh; /* Fallback for older browsers */
+		min-height: 100vh;
 		min-height: 100dvh;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -45,6 +45,9 @@ const { title = 'Melih Aka | Portfolio' } = Astro.props;
 		font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
