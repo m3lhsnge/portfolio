@@ -17,6 +17,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Install, build, and upload with Astro
         uses: withastro/action@v3
+        env:
+          PUBLIC_SITE_URL: https://m3lhsnge.github.io/portfolio/
+          PUBLIC_BASE_PATH: /portfolio
         with:
           node-version: 22
 
